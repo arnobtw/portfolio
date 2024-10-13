@@ -1,0 +1,52 @@
+.c-logo {
+  height: auto;
+  width: 30%;
+  transition: all 0.3s ease;
+  &:hover{
+    transform: scale(1.1);
+  }
+
+  &__colors {
+    transition: fill 0.3s ease;
+  }
+
+  &__a,
+  &__s {
+    transition: transform 0.3s ease;
+  }
+
+  &__a--yellow {
+    fill: $color-yellow;
+  }
+
+  &__a--red {
+    fill: $color-red;
+  }
+
+  &__s--red {
+    fill: $color-red;
+  }
+
+  &__s--yellow {
+    fill: $color-yellow;
+  }
+
+  &:hover {
+    .c-logo__a--yellow {
+      fill: $color-red;
+      transition-delay: 0.1s;
+    }
+    .c-logo__a--red {
+      fill: $color-yellow;
+      transition-delay: 0.2s;
+    }
+    .c-logo__s--red {
+      fill: $color-yellow;
+      transition-delay: 0.3s;
+    }
+    .c-logo__s--yellow {
+      fill: $color-red;
+      transition-delay: 0.4s;
+    }
+  }
+}
